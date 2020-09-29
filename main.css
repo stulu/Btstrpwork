@@ -90,22 +90,6 @@ h4{
     color: orange;
 }
 
-header{
-        background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);
-        color:white;
-        height: 100px;
-}
-/*
-.nav{
-    background-color: gray;
-    color: white;
-    text-decoration: none;
-    padding: 5px, 5px;
-    border-radius: 10px;
-    display: inline-flexbox;
-    justify-content: space-evenly;
-}*/
-
 .menu{
     display: block;
     margin-left: auto;
@@ -182,4 +166,11 @@ footer{
 .redsoc{
 
 color: white;
+}
+img { transition: all 0.6s ease-in-out 0s; }
+img:hover
+{
+    cursor: default;
+    transform: rotate(360deg);
+    transition: all 0.6s ease-in-out 0s;
 }
