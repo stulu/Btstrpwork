@@ -61,22 +61,6 @@
     @media (min-width:960px) { body {font-size:1.2rem;} } 
     @media (min-width:1100px) { body {font-size:1.5rem;} } 
 
-animation {
-	  width: 100px;
-	  height: 50px;
-    font-weight: bold;
-	  position: relative;
-	  animation: mymove 3s ;
-	  animation-iteration-count: 2;
-    animation-direction: alternate;
-    
-}
-#animation1 {animation-timing-function: ease;}
-			
-@keyframes mymove {
-	from {left:0px}
-	to {left:190px}
-}
 
 
 h1{
@@ -89,42 +73,6 @@ h4{
     font-family: cursive;
     color: orange;
 }
-
-.menu{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 70%;
-    padding:10px;
-    
-}
-/* Make responsive images in 2 rows of 3*/
-.row-container {
-    display: flex;
-    flex-direction: row;
-   
-  }
-  
-  .row-container > div {
-    justify-content: space-evenly;
-    padding: 2px;
-    
-  }
-  
-  /* flexbox to keep pictures spaced */
-.responsive{
-    display: flex ;
-    align-items: flex-start; /* fix stretched pictures in safari browser*/
-    justify-content: space-around;
-    width: 90%;
-    height: 90%;
-    padding:5px;
-}
-.flex-container {
-    display: flex;
-    flex-wrap: wrap;
-   
-  }
   
 .table{
     display: block;
@@ -132,23 +80,6 @@ h4{
     width: 90%;
     height: auto;
     padding:10px;
-}
-.regbutton {
-  font-family: arial;
-  color: #14396A !important;
-  font-size: 14px;
-  text-shadow: 2px 2px 0px #7CACDE;
-  box-shadow: 4px 4px 1px #BEE2F9;
-  padding: 11px 16px;
-  border-radius: 10px;
-  border: 2px solid #3866A3;
-  background: #63B8EE;
-  background: linear-gradient(to top, #63B8EE, #468CCF);
-}
-.regbutton:hover {
-  color: #683A6A !important;
-  background: #468CCF;
-  background: linear-gradient(to top, #468CCF, #63B8EE);
 }
 
 footer{
