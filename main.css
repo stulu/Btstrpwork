@@ -1,10 +1,6 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 1px;
-    
-  }
-
+*{
+  padding: 1px;
+}
   body{
       width: 100%;
       min-height: 100vh;
@@ -71,12 +67,13 @@ h4{
 }
 
 footer{
+    display: block;
     margin-top: auto;
     position: static;
     height: 85px;
-    bottom: 0;
-    left: 0;
-    width: 100%;
+    bottom:0; width:100%;
+    left: 0px;
+    overflow: hidden;
     background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);
     color: white;
     text-align: center ;  
