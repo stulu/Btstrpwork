@@ -1,58 +1,101 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
 	<title>Stu's Cakes</title>
 	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="main.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="HandheldFriendly" content="true">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="main.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 	<script src="https://kit.fontawesome.com/44a649f4bd.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
-	<header >
-		<nav>
-            <a class="nav" href="index.html" >Index</a>
-            <a class="nav" href="about.html" >About</a>
-			<a class="nav" href="contact.html" >Contact</a>
-			<a class="nav" href="budines.html" >Cakes</a>
-            <a class="nav" href="location.html">Find us</a>
-            
-            
-		</nav>
-		<h1>Stu's cakes</h1>
-	</header>
-    
-    <menu>
-        <h2><animation id="animation1">Registration Form</h2>
-        <form action="https://formspree.io/mknqdzqo"
-        method="POST">
-            <label for = "firstname"> Name: </label> <input type="text" name="firstname" placeholder="enter your name here" > <br/><br/>
-            <label for = "surname"> Last name: </label> <input type="text" name="lastname" placeholder="enter your surname here" > <br/><br/>
-            <label for = "Address"> Address :</label> <input type="text" name="address" placeholder=" type here"> <br/><br/>
-            <label for = "Citylabel"> City: </label> <input type="text" name="city" placeholder=" type here"> <br/><br/>
-            <label for = "Postcode" > Postcode: </label> <input type="text" name="postcode" placeholder="type here"> <br/><br/>
-            <label for = "Date of birth (mm/dd/yy)">Date of birth:</label> <input type="text" name="birthday" placeholder="type here"> <br/><br/>
-            <p>Gender
-                <input type="radio" id="male" name="gender" value="male">
-                <label for="male">Male</label>
-                <input type="radio" id="female" name="gender" value="female">
-                <label for="female">Female</label>
-                <input type="radio" id="other" name="gender" value="other">
-                <label for="other">Other</label>
-            </p>
+			<nav class="navbar navbar-expand-md bg-primary navbar-dark">
+				<a class="navbar-brand" href="#"><i class="fas fa-carrot"></i></a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+				  <span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="collapsibleNavbar">
+				  <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html" >Index</a>
+                      </li>
+					<li class="nav-item">
+					  <a class="nav-link" href="about.html" >About</a>
+					</li>
+					<li class="nav-item">
+					  <a class="nav-link" href="budines.html" >Cakes</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="location.html">Find us</a>
+					  </li>
+					<li class="nav-item">
+						<a class="nav-link" href="Our Clients.html">Clients</a>
+					  </li>
+				  </ul>
+				</div>  
+			</nav>
+			  <br>
 
-            <p>Education
-                <input type="checkbox" name="primary" value="Primary"> Primary
-                <input type="checkbox" name="secondary" value="Secondary">Secondary
-                <input type="checkbox" name="college" value="Colledge">Colledge
-                <input type="checkbox" name="university" value="University">University
-            </p>
-            <input type="submit" value="Submit" />
+        <h1>Stu's cakes</h1>
+
+        <h2>Registration Form</h2>
+
+        <form action="https://formspree.io/mknqdzqo" method="POST">
+            <div class="form-group">
+                <div class="form-group">
+                    <label for="firstname">Name:</label>
+                    <input type="text" class="form-control" name="firstname" placeholder="enter your name here" > 
+                </div>
+                  <div class="form-group">
+                    <label for="surname">Last name:</label>
+                    <input type="text" class="form-control" name="lastname" placeholder="enter your surname here" > 
+                </div>
+                <div class="form-group">
+                    <label for="Address">Address:</label>
+                    <input type="text" class="form-control" name="address" placeholder="enter address here" > 
+                </div>
+                  <div class="form-group">
+                    <label for="Citylabel">City:</label>
+                    <input type="text" class="form-control" name="city" placeholder="enter your city here" > 
+                </div>
+                <div class="form-group">
+                    <label for="Postcode">Postcode:</label>
+                    <input type="text" class="form-control" name="postcode" placeholder="enter postcode here" > 
+                </div>
+                  <div class="form-group">
+                    <label for="Date of birth (mm/dd/yy)">Date of birth:</label>
+                    <input type="text" class="form-control" name="birthday" placeholder="enter your birthday here" > 
+                </div>
+            
+            
+            <p>Gender</p>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" class="custom-control-input" id="male" name="gender" value="male">
+                    <label class="custom-control-label" for="male">Male</label>
+                  </div>
+                  <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" class="custom-control-input" id="female" name="gender" value="female">
+                    <label class="custom-control-label" for="female">Female</label>
+                  </div>
+                  <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" class="custom-control-input" id="other" name="gender" value="other">
+                    <label class="custom-control-label" for="other">Other</label>
+                  </div>
+
+
+                  <button type="submit" value= "submit" class="btn btn-primary">Submit</button>
+            
         </form>
 		<p>When you click submit you will be taken to another page!!!</p>
-	</menu>
-	<footer class = "center">
+	
+	<footer>
 		
 		<a class="redsoc" href="https://www.facebook.com/"><i class="fab fa-facebook" aria-hidden="true"></i></a>
 		<a class="redsoc" href="https://www.linkedin.com/in/stuart-lenox-375b5b74/"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
