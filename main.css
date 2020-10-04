@@ -15,12 +15,7 @@
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) { 
-    .flex-container > div {
-      background-color: yellowgreen ;
-      margin: 10px;
-      padding: 10px;
-      
-    }
+  
     h2{
       font-family: Arial, Helvetica, sans-serif;
       color: seagreen;
@@ -30,11 +25,7 @@
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-  .flex-container > div {
-    background-color: #60f08b;
-    margin: 10px;
-    padding: 10px;  
-  }
+
   h2{
     font-family: Arial, Helvetica, sans-serif;
     color: seagreen;
@@ -44,11 +35,7 @@
   
   /* Large devices (laptops/desktops, 992px and up) */
   @media only screen and (min-width: 992px) {
-    .flex-container > div {
-      background-color: #f380b6;
-      margin: 10px;
-      padding: 10px;  
-    }
+    
     h2{
       font-family: Arial, Helvetica, sans-serif;
       color: blue;
