@@ -80,7 +80,7 @@ footer{
     bottom:0; width:100%;
     left: 0px;
     overflow: hidden;
-    background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);
+    background-color:#007bff ;
     color: white;
     text-align: center ;  
 }
